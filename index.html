@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ManUtd Pop Quiz</title>
+    <link type="text/css" href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="grid">
+        <div class="logo-mu-header">
+          <img src="media/Logo Manchester United.png " />
+        </div>
+        <div class="tulisan">
+          <h1>MANCHESTER UNITED POP QUIZ-QUIZAN</h1>
+        </div>
+      </div>
+    </header>
+    <hr />
+    <form id="kuis" name="kuis">
+      <div class="grid-container">
+        <div class="judul">QUESTIONS</div>
+        <div class="row">
+          <div class="col-2">
+            <div class="pertanyaan">
+              <p>
+                1. Berapa kali Manchester United menjuarai gelar Champions
+                League?
+              </p>
+              <hr />
+              <input
+                type="radio"
+                id="mc"
+                name="question1"
+                value="tiga"
+              />3<br />
+              <input type="radio" id="mc" name="question1" value="dua" />2<br />
+              <input
+                type="radio"
+                id="mc"
+                name="question1"
+                value="empat"
+              />4<br />
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="pertanyaan">
+              <p>
+                2. Berapa kali Manchester United menjuarai gelar Premier League?
+              </p>
+              <hr />
+              <input
+                type="radio"
+                id="mc"
+                name="question2"
+                value="duadua"
+              />22<br />
+              <input
+                type="radio"
+                id="mc"
+                name="question2"
+                value="duapuluh"
+              />20<br />
+              <input
+                type="radio"
+                id="mc"
+                name="question2"
+                value="sembilanbelas"
+              />19<br />
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="pertanyaan">
+              <p>
+                3. Siapa kiper yang membela United saat menjuarai Champions
+                League 2007?
+              </p>
+              <hr />
+              <input type="radio" id="mc" name="question3" value="EVDS" />Edwin
+              Van Der Sar<br />
+              <input type="radio" id="mc" name="question3" value="DDG" />David
+              De Gea<br />
+              <input type="radio" id="mc" name="question3" value="AL" />Anders
+              Lindegaard<br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tombol">
+        <input type="button" id="button" value="SUBMIT" onclick="check();" />
+      </div>
+    </form>
+    <div id="submit">
+      <p id="pesan"></p>
+      <br />
+      <p id="bener"></p>
+    </div>
+  </body>
+</html>
